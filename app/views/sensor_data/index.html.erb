@@ -1,0 +1,24 @@
+<h1>Aközcan Eczanesi | Sıcaklık ve Nem Verileri</h1>
+
+<table cellspacing="10">
+  <thead>
+  <tr>
+    <th>Sıcaklık (°C)</th>
+    <th>Nem (%)</th>
+    <th>Tarih</th>
+    <th>Saat</th>
+    <th colspan="4"></th>
+  </tr>
+  </thead>
+
+  <% @sensor_data.reverse.each do |sensor_datum| %>
+      <tr>
+        <td align="center"><%= sensor_datum.temperature %></td>
+        <td align="center"><%= sensor_datum.humidity %></td>
+        <td align="center"><%= sensor_datum.created_at.localtime.strftime('%d/%m/%y') %></td>
+        <td align="center"><%= sensor_datum.created_at.localtime.strftime('%H:%M') %></td>
+      </tr>
+  <% end %>
+</table>
+
+<br>
