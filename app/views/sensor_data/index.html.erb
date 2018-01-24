@@ -11,7 +11,7 @@
   </tr>
   </thead>
 
-  <% @sensor_data.reverse.each do |sensor_datum| %>
+  <% @sorted_sensor_data.each do |sensor_datum| %>
       <tr>
         <td align="center"><%= sensor_datum.temperature %></td>
         <td align="center"><%= sensor_datum.humidity %></td>
