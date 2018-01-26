@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1941e94-442e-4cff-bc63-5243a035399f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sensor_data_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sensor_data_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sensor_data/index.html.erb" afterPath="$PROJECT_DIR$/app/views/sensor_data/index.html.erb" />
-    </list>
+    <list default="true" id="e1941e94-442e-4cff-bc63-5243a035399f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -558,12 +554,12 @@
       <workItem from="1515131829354" duration="6083000" />
       <workItem from="1515206109157" duration="423000" />
       <workItem from="1515944559453" duration="6495000" />
-      <workItem from="1516783038656" duration="497000" />
+      <workItem from="1516783038656" duration="589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15657000" />
+    <option name="totallyTimeSpent" value="15749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="822" extended-state="6" />
