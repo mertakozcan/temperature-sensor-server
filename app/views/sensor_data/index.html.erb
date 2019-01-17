@@ -1,5 +1,12 @@
 <h1>Aközcan Eczanesi | Sıcaklık ve Nem Verileri</h1>
 
+<form action="/sensor_data.csv" target="_blank">
+  <label for="date">Ay seçin:</label>
+  <input type="month" id="date" name="date"
+         min="2019-01" value="2019-01">
+  <input type="submit" value="İndir">
+</form>
+
 <table cellspacing="10">
   <thead>
   <tr>
@@ -11,7 +18,7 @@
   </tr>
   </thead>
 
-  <% @sorted_sensor_data.each do |sensor_datum| %>
+  <% @sensor_data.each do |sensor_datum| %>
       <tr>
         <td align="center"><%= sensor_datum.temperature %></td>
         <td align="center"><%= sensor_datum.humidity %></td>
