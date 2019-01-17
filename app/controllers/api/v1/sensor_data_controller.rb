@@ -16,7 +16,8 @@ module Api
 
       # POST /api/v1/sensor_data
       def create
-        if SensorDatum.last.created_at.hour != Time.now.hour
+        last = SensorDatum.last
+        if last.nil? or last.created_at.hour != Time.now.hour
           json_response(SensorDatum.create!(sensor_datum_params), :created)
         else
           json_response({}, :ok)
