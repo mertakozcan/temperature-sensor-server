@@ -4,10 +4,6 @@ Rails.application.routes.draw do
   resources :sensor_data
 
   namespace :api do
-    namespace :v2 do
-      resources :sensor_data
-    end
-
     namespace :v1 do
       resources :sensor_data
     end

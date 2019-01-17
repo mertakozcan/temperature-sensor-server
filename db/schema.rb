@@ -12,16 +12,19 @@
 
 ActiveRecord::Schema.define(version: 20180701190115) do
 
-  create_table "books", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "books", force: :cascade do |t|
     t.string "name"
     t.string "genre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "sensor_data", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.float "temperature", limit: 24
-    t.float "humidity", limit: 24
+  create_table "sensor_data", force: :cascade do |t|
+    t.float "temperature"
+    t.float "humidity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
