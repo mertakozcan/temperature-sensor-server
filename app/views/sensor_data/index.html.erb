@@ -22,8 +22,8 @@
       <tr>
         <td align="center"><%= sensor_datum.temperature %></td>
         <td align="center"><%= sensor_datum.humidity %></td>
-        <td align="center"><%= sensor_datum.created_at.localtime.strftime('%d/%m/%y') %></td>
-        <td align="center"><%= sensor_datum.created_at.localtime.strftime('%H:%M') %></td>
+        <td align="center"><%= sensor_datum.created_at.in_time_zone('Istanbul').strftime('%d/%m/%y') %></td>
+        <td align="center"><%= sensor_datum.created_at.in_time_zone('Istanbul').strftime('%H:%M') %></td>
       </tr>
   <% end %>
 </table>
